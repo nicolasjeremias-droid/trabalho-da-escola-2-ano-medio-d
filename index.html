@@ -20,7 +20,7 @@
     <main id="interface-usuario">
         <section class="painel-info">
             <h1>O Motor Oculto da Agricultura</h1>
-            <p>Você sabia que o solo abriga de 25% a 59% de toda a biodiversidade do planeta? [cite: 13] Manter esse ecossistema vivo é crucial para a fertilidade natural e o sucesso do campo[cite: 3].</p>
+            <p>Você sabia que o solo abriga de 25% a 59% de toda a biodiversidade do planeta? Manter esse ecossistema vivo é crucial para a fertilidade natural e o sucesso do campo.</p>
             
             <div class="instrucoes">
                 <h3>Simulador Interativo do Solo</h3>
@@ -28,19 +28,32 @@
             </div>
 
             <div class="botoes-controle">
-                <button id="btn-queimada" class="btn perigo">Monocultura / Práticas Inadequadas</button>
-                <button id="btn-direto" class="btn sucesso">Sistema de Plantio Direto</button>
-                <button id="btn-ilpf" class="btn sucesso">Adicionar ILPF / Rotação</button>
+                <button id="btn-queimada" class="btn perigo">⚠️ Monocultura / Práticas Inadequadas</button>
+                <button id="btn-info-queimada" class="btn-info">📖 Ver conteúdo completo</button>
+                
+                <button id="btn-direto" class="btn sucesso">🌾 Sistema de Plantio Direto</button>
+                <button id="btn-info-direto" class="btn-info">📖 Ver conteúdo completo</button>
+                
+                <button id="btn-ilpf" class="btn sucesso">🌳 Adicionar ILPF / Rotação</button>
+                <button id="btn-info-ilpf" class="btn-info">📖 Ver conteúdo completo</button>
             </div>
         </section>
 
         <section class="painel-status">
             <h3>Status do Ecossistema:</h3>
-            <div id="status-biodiversidade">Biodiversidade: 100% (Equilibrado)</div>
-            <p id="detalhe-cientifico">O solo está saudável. Os engenheiros do ecossistema (minhocas) e a microbiota estão reciclando os nutrientes perfeitamente[cite: 18, 32].</p>
+            <div id="status-biodiversidade">🌍 Biodiversidade: 100% (Equilibrado)</div>
+            <p id="detalhe-cientifico">O solo está saudável. Os engenheiros do ecossistema (minhocas) e a microbiota estão reciclando os nutrientes perfeitamente.</p>
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <div id="modal-info" class="modal">
+        <div class="modal-content">
+            <span class="fechar-modal">&times;</span>
+            <div id="modal-conteudo">
+                </div>
+        </div>
+    </div>
+
+    <script src="sketch.js"></script>
 </body>
 </html>
