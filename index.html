@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável - Biodiversidade do Solo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h2>Agro<span>Sustentável</span></h2>
+            <p>Tema: Biodiversidade do Solo e a Produtividade Agrícola</p>
+        </div>
+    </header>
+
+    <main id="interface-usuario">
+        <section class="painel-info">
+            <h1>O Motor Oculto da Agricultura</h1>
+            <p>Você sabia que o solo abriga de 25% a 59% de toda a biodiversidade do planeta? [cite: 13] Manter esse ecossistema vivo é crucial para a fertilidade natural e o sucesso do campo[cite: 3].</p>
+            
+            <div class="instrucoes">
+                <h3>Simulador Interativo do Solo</h3>
+                <p>Clique nos botões abaixo para introduzir práticas agrícolas e veja no canvas do p5.js o impacto em tempo real na saúde do ecossistema subterrâneo!</p>
+            </div>
+
+            <div class="botoes-controle">
+                <button id="btn-queimada" class="btn perigo">Monocultura / Práticas Inadequadas</button>
+                <button id="btn-direto" class="btn sucesso">Sistema de Plantio Direto</button>
+                <button id="btn-ilpf" class="btn sucesso">Adicionar ILPF / Rotação</button>
+            </div>
+        </section>
+
+        <section class="painel-status">
+            <h3>Status do Ecossistema:</h3>
+            <div id="status-biodiversidade">Biodiversidade: 100% (Equilibrado)</div>
+            <p id="detalhe-cientifico">O solo está saudável. Os engenheiros do ecossistema (minhocas) e a microbiota estão reciclando os nutrientes perfeitamente[cite: 18, 32].</p>
+        </section>
+    </main>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
